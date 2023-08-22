@@ -92,6 +92,7 @@ const withStyles = makeStyles(() => ({
         padding: "10px",
         width: "100%",
         margin: "auto",
+        fontFamily: "Nanum Gothic, sans-serif",
         "@media(max-width: 600px)": {
             width: "90%"
         }
@@ -125,7 +126,7 @@ const withStyles = makeStyles(() => ({
         marginRight: "0px",
         fontSize: "2em",
         fontWeight: "500",
-        // fontFamily: "Angkor, sans-serif !important",
+        fontFamily: "Nanum Gothic, sans-serif; !important",
         textAlign: "center",
         margin: "auto",
         "@media(max-width: 600px)": {
@@ -142,7 +143,7 @@ const withStyles = makeStyles(() => ({
             marginRight: "0px",
             fontSize: "2em",
             fontWeight: "100",
-            // fontFamily: "Raleway, sans-serif",
+            fontFamily: "Nanum Gothic, sans-serif",
             textAlign: "center",
             margin: "auto"
         }
@@ -231,7 +232,7 @@ const withStyles = makeStyles(() => ({
     contactPhone: {
         color: "black",
         textDecoration: "none",
-        // fontFamily: "Raleway, sans-serif",
+        fontFamily: "Nanum Gothic, sans-serif",
     },
     contactButton: {
         margin: "20px",
@@ -387,11 +388,13 @@ const withStyles = makeStyles(() => ({
         fontSize: "2rem",
         color: "black",
         textTransform: "uppercase",
-        marginBottom: 0
+        marginBottom: 0,
+        fontFamily: "Nanum Gothic, sans-serif !important"
     },
     addressText: {
         textAlign: "center",
-        margin: "40px 0"
+        margin: "40px 0",
+        fontFamily: "Nanum Gothic, sans-serif !important"
     },
     aboutWrapper: {
         display: "flex",
@@ -406,7 +409,8 @@ const withStyles = makeStyles(() => ({
         fontSize: "2rem",
         textAlign: "center",
         color: "black",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        fontFamily: "Nanum Gothic, sans-serif !important"
     },
     socialLinkWrapper: {
         display: "flex",
@@ -587,20 +591,20 @@ const Main = () => {
                     <div>
                         <Typography className={classes.connectHeader}>Connect With Us</Typography>
                         <div className={classes.phoneEmailWrapper}>
-                            <a href="tel:" className={classes.contactPhone}>
+                            <a href="tel:(585) 512-5300" className={classes.contactPhone}>
                                 <Button className={classes.contactButton}>
                                     <PhoneIcon className={classes.phoneIcon} />
-                                    (123) 456-7890
+                                    (585) 512-5300
                                 </Button>
                             </a>
-                            <div className={classes.socialLinkWrapper}>
+                            {/* <div className={classes.socialLinkWrapper}>
                                 <a href="" target="_blank" className={classes.socialLink}>
                                     <img className={classes.socialFooter} src={InstagramIcon} />
                                 </a>
                                 <a href="" target="_blank" className={classes.socialLink}>
                                     <img className={classes.socialFacebookSpacing} src={FacebookIcon} />
                                 </a>
-                            </div>
+                            </div> */}
 
                         </div>
                         <div className={classes.reviewsWrapper}>

@@ -23,7 +23,7 @@ import "./main.css"
 const withStyles = makeStyles(() => ({
   "@global": {
     "*": {
-      // fontFamily: "Angkor !important",
+      fontFamily: "Nanum Gothic, sans-serif; !important",
       fontWeight: "100"
     }
   },
@@ -90,7 +90,7 @@ const withStyles = makeStyles(() => ({
   hamburgerIcon: {
     margin: "20px",
     fontSize: "2.5rem",
-    color: "red",
+    color: "white",
     "@media(min-width: 601px)": {
       display: "none"
     }
@@ -102,7 +102,7 @@ const withStyles = makeStyles(() => ({
   },
   navCallButton: {
     display: "flex",
-    backgroundColor: "#f03d3dcf",
+    backgroundColor: "#000000",
     padding: "8px 16px",
     color: "white",
     textTransform: "none",
@@ -112,7 +112,7 @@ const withStyles = makeStyles(() => ({
   },
   navCallButtonMobile: {
     display: "flex",
-    backgroundColor: "#f03d3dcf",
+    backgroundColor: "#000000",
     padding: "8px 16px",
     color: "white",
     textTransform: "none",
@@ -121,7 +121,8 @@ const withStyles = makeStyles(() => ({
     margin: "auto 20px",
     "@media(max-width: 600px)": {
       fontSize: "0.75rem",
-      margin: "auto"
+      margin: "auto",
+      width: "110px"
     }
   },
   drawerLinkWrapper: {
@@ -129,7 +130,7 @@ const withStyles = makeStyles(() => ({
     flexDirection: "column",
   },
   navButtonMobile: {
-  color: "white",
+  color: "black",
   // fontWeight: "bold",
   textTransform: "none",
   margin: "10px 16px",
@@ -162,7 +163,7 @@ const Header = ({ siteTitle }) => {
             to="/#sectionOne" title="Get a Quote">
           </AnchorLink>
           <AnchorLink className={classes.navButton}
-            to="/#sectionTwo" title="Vendors">
+            to="/#sectionTwo" title="Suppliers">
           </AnchorLink>
           <AnchorLink className={classes.navButton}
             to="/#sectionThree" title="Pricing">
@@ -172,7 +173,7 @@ const Header = ({ siteTitle }) => {
             className={classes.navCallButton}
             target="_blank" href="tel:"
           >
-            <PhoneIcon class="drawerPhoneIcon" />
+            <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
             Call Us
           </Button>
         </div>
@@ -191,7 +192,7 @@ const Header = ({ siteTitle }) => {
           className={classes.navCallButtonMobile}
           target="_blank" href="tel:"
         >
-          <PhoneIcon class="drawerPhoneIcon" />
+          <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
           Call Us
         </Button>
         <MenuIcon
@@ -213,13 +214,13 @@ const Header = ({ siteTitle }) => {
             <List>
               <div className={classes.drawerLinkWrapper}>
                 <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionOne" title="Section 1">
+                  to="/#sectionOne" title="Get a Quote">
                 </AnchorLink>
                 <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionTwo" title="Section 2">
+                  to="/#sectionTwo" title="Suppliers">
                 </AnchorLink>
                 <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionThree" title="Section 3">
+                  to="/#sectionThree" title="Pricing">
                 </AnchorLink>
               </div>
 
@@ -227,17 +228,17 @@ const Header = ({ siteTitle }) => {
                 class="drawerItemLogin"
                 target="_blank" href="tel:"
               >
-                <PhoneIcon class="drawerPhoneIcon" />
+                <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
                 Call Us
               </Button>
-              <div class="socialLinkWrapperNavMobile">
+              {/* <div class="socialLinkWrapperNavMobile">
                 <a href="" target="_blank" class="socialLink">
                   <img class="socialDrawer" src={InstagramIcon} />
                 </a>
                 <a href="" target="_blank" class="socialLink">
                   <img class="socialDrawerFb" src={FacebookIcon} />
                 </a>
-              </div>
+              </div> */}
             </List>
 
           </div>

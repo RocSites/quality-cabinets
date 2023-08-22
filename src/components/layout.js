@@ -9,7 +9,7 @@ import "./layout.css"
 const withStyles = makeStyles(() => ({
   "@global":{
     p:{
-        // fontFamily: "Raleway, sans-serif"
+        fontFamily: "Nanum Gothic, sans-serif"
     }
   },
     layoutRoot: {
@@ -37,6 +37,7 @@ const withStyles = makeStyles(() => ({
     copyrightText: {
       marginTop: "auto",
       marginBottom: "auto",
+      fontFamily: "Nanum Gothic, sans-serif !important",
       "@media(max-width: 600px)":{
         textAlign: "center"
       }
@@ -84,7 +85,7 @@ const Layout = ({ children }) => {
         <main className={classes.mainContent}>{children}</main>
         <footer class="footerRoot">
           <div className={classes.footerContent}>
-            <p className={classes.copyrightText}> © {new Date().getFullYear()} COMPANY NAME</p>
+            <p className={classes.copyrightText}> © {new Date().getFullYear()} QUALITY CABINETS</p>
             <p class="rocsitesText">Website created and maintained by <span><a href="https://www.rocsites.com/" target="_blank">RocSites</a></span></p>
           </div>
         </footer>
