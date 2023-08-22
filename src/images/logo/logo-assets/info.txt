@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Comfortaa-Bold
+font link: https://fonts.google.com/specimen/Comfortaa
+font author: Johan Aakerlund
+font author site: https://aajohan.deviantart.com/
+
+
+icon designer: rivercon
+icon designer link: /rivercon
+        
+{"bg-gradient-0":"#182471","bg-gradient-1":"#2664C8","icon":"#fff","font":"#fff","slogan":"#1423ff"}
+      

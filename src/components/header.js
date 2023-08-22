@@ -5,7 +5,8 @@ import { makeStyles } from '@material-ui/core'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 import Button from '@material-ui/core/Button'
 import chillGrillLogoOG from '../images/chill_logo_og.jpeg'
-import RocSitesLogo from "../images/logo/logo.png"
+import CabinetLogo from "../images/logo/logo.svg"
+import CabinetLogoText from "../images/logo/logo-assets/vector/default-monochrome.svg"
 import coneIcon from "../images/cone_icon.png"
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -41,10 +42,11 @@ const withStyles = makeStyles(() => ({
   },
   navBarTitle: {
     maxWidth: 960,
-    padding: `1.45rem 1.0875rem`,
+    padding: "1rem",
+    margin: "auto 0"
   },
   navButton: {
-    color: "black",
+    color: "white",
     // fontWeight: "bold",
     textTransform: "none",
     margin: "auto 10px",
@@ -67,7 +69,7 @@ const withStyles = makeStyles(() => ({
   },
   navLogo: {
     display: "flex",
-    width: "60px",
+    width: "100%",
     margin: "auto",
   },
   drawerItem: {
@@ -95,6 +97,8 @@ const withStyles = makeStyles(() => ({
   },
   navLeftWrapper: {
     display: "flex",
+    justifyContent: "space-between",
+    width: "100%"
   },
   navCallButton: {
     display: "flex",
@@ -150,18 +154,18 @@ const Header = ({ siteTitle }) => {
       <div className={classes.navLeftWrapper}>
         <div className={classes.navBarTitle}>
           <Link to="/" style={{ color: '#001841', textDecoration: `none` }}>
-            <img className={classes.navLogo} src={RocSitesLogo} alt="company logo" />
+            <img className={classes.navLogo} src={CabinetLogoText} alt="company logo" />
           </Link>
         </div>
         <div className={classes.navBarButtonWrapper}>
           <AnchorLink className={classes.navButton}
-            to="/#sectionOne" title="Section 1">
+            to="/#sectionOne" title="Get a Quote">
           </AnchorLink>
           <AnchorLink className={classes.navButton}
-            to="/#sectionTwo" title="Section 2">
+            to="/#sectionTwo" title="Vendors">
           </AnchorLink>
           <AnchorLink className={classes.navButton}
-            to="/#sectionThree" title="Section 3">
+            to="/#sectionThree" title="Pricing">
           </AnchorLink>
 
           <Button
@@ -174,14 +178,14 @@ const Header = ({ siteTitle }) => {
         </div>
       </div>
 
-      <div class="socialLinkWrapperNav">
+      {/* <div class="socialLinkWrapperNav">
         <a href="" target="_blank" class="socialLink">
           <img class="socialNav" src={InstagramIcon} />
         </a>
         <a href="" target="_blank" class="socialLink">
           <img class="socialNavFb" src={FacebookIcon} />
         </a>
-      </div>
+      </div> */}
       <div className={classes.navBarHamburgerDrawerWrapper}>
         <Button
           className={classes.navCallButtonMobile}

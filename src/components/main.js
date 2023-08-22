@@ -6,6 +6,7 @@ import { Link } from "gatsby"
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import rocBuildingOne from "../images/yassine-khalfalli-roc-image.jpg"
+import CabinetBacksplash from "../images/cab_backsplash.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
 import PhoneIcon from '@material-ui/icons/Phone'
@@ -541,7 +542,7 @@ const Main = () => {
         <div className={classes.mainRoot}>
             {/* <div className={classes.mainBanner}>We are closed Tuesday, August 1st. We will reopen Wednesday, August 2nd</div> */}
 
-            <img src={rocBuildingOne} className={classes.landingImage} />
+            <img src={CabinetBacksplash} className={classes.landingImage} />
 
             <section class="sectionWrapper">
                 <div className={classes.container}>
