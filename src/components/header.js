@@ -166,7 +166,7 @@ const Header = ({ siteTitle }) => {
             to="/#sectionTwo" title="Suppliers">
           </AnchorLink>
           <AnchorLink className={classes.navButton}
-            to="/#sectionThree" title="Pricing">
+            to="/#sectionThree" title="About">
           </AnchorLink>
 
           <Button
@@ -220,7 +220,7 @@ const Header = ({ siteTitle }) => {
                   to="/#sectionTwo" title="Suppliers">
                 </AnchorLink>
                 <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionThree" title="Pricing">
+                  to="/#sectionThree" title="About">
                 </AnchorLink>
               </div>
 

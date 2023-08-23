@@ -613,15 +613,27 @@ const Main = () => {
 
             <section class="sectionWrapper">
                 <div className={classes.container}>
-                    <div className={classes.container}>
-                        <span className={classes.scrollToSectionOne} id="sectionOne"></span>
-                    </div>
                     <div className={classes.containerMarginBottomSmall}>
                         <Typography className={classes.someOfWorkHeader}>All-wood, custom, and high-quality cabinets.</Typography>
                     </div>
                 </div>
-
             </section>
+            
+            <div className={classes.container}>
+                <span className={classes.scrollToSectionOne} id="sectionOne"></span>
+            </div>
+            <section class="py-5 section-bubble3">
+                <div className={classes.container}>
+
+                    <div className={classes.aboutWrapper}>
+                        <div className={classes.aboutSectionWrapper}>
+                            <Typography className={classes.aboutTitleHeader}>Get a Quote</Typography>
+                            <Typography className={classes.addressText}>Section 3 subtext</Typography>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <div className={classes.container}>
                 <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
             </div>
@@ -652,7 +664,7 @@ const Main = () => {
                 <div className={classes.container}>
                     <div className={classes.aboutWrapper}>
                         <div className={classes.aboutSectionWrapper}>
-                            <Typography className={classes.aboutTitleHeader}>Section 3</Typography>
+                            <Typography className={classes.aboutTitleHeader}>About Us</Typography>
                             <Typography className={classes.addressText}>Section 3 subtext</Typography>
                         </div>
                     </div>
