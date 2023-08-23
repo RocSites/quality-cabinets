@@ -543,6 +543,21 @@ const withStyles = makeStyles(() => ({
         display: "flex",
         width: "100%",
         justifyContent: "center"
+    },
+    supplierButton: {
+        backgroundColor: "gray",
+        color: "white",
+        borderRadius: "35px",
+        padding: "10px",
+        width: "350px",
+        '&:hover': {
+            backgroundColor: "#001841",
+            boxShadow: 'none',
+            cursor: "pointer"
+        },
+        "& > span": {
+            textTransform: "none"
+        }
     }
 
 }))
@@ -614,13 +629,19 @@ const Main = () => {
                 <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography> We use the best in the business</Typography>
                 <div className={classes.supplierSubWrapper}>
                     <div className={classes.supplierImgWrapper}>
-                        <img className={classes.supplierImage} src={wolfLogo} />
-                        <img className={classes.supplierImage} src={belknapLogo} />
-                        <img className={classes.supplierImage} src={richelieuLogo} />
+                        <a href="https://www.wolfhomeproducts.com/" target="_blank">
+                            <img className={classes.supplierImage} src={wolfLogo} />
+                        </a>
+                        <a href="https://www.belknapwhite.com/" target="_blank">
+                            <img className={classes.supplierImage} src={belknapLogo} />
+                        </a>
+                        <a href="https://www.richelieu.com/us/en/" target="_blank">
+                            <img className={classes.supplierImage} src={richelieuLogo} />
+                        </a>
                     </div>
                 </div>
                 <Link to="/suppliers">
-                    <Button>
+                    <Button className={classes.supplierButton}>
                         Supplier Gallery
                     </Button>
                 </Link>
