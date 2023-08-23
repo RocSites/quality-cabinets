@@ -6,6 +6,9 @@ import { Link } from "gatsby"
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import rocBuildingOne from "../images/yassine-khalfalli-roc-image.jpg"
+import wolfLogo from "../images/wolf_logo_green.png"
+import belknapLogo from "../images/belknap_logo.jpeg"
+import richelieuLogo from "../images/Richelieu_Logo.svg"
 import CabinetBacksplash from "../images/cab_backsplash.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
@@ -96,6 +99,18 @@ const withStyles = makeStyles(() => ({
         "@media(max-width: 600px)": {
             width: "90%"
         }
+    },
+    supplierImgWrapper: {
+        display: "flex",
+        "@media(max-width: 600px)": {
+            flexDirection: "column",
+        }
+    },
+    supplierImage: {
+        margin: "25px",
+        width: "150px",
+        aspectRatio: "1/1",
+        objectFit: "contain"
     },
     landingMessageWrapper: {
         display: "flex",
@@ -485,21 +500,50 @@ const withStyles = makeStyles(() => ({
     },
     mainBanner: {
         display: "flex",
-        marginTop: "25%",
-        marginLeft: "25%",
-        marginRight: "15%",
-        textAlign: "center",
-        position: "absolute",
-        backgroundColor: "white",
-        justifyContent: "center",
-        padding: "20px",
-        borderRadius: "35px",
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),url(${CabinetBacksplash})`,
+        backgroundSize: "cover",
+        justifyContent: "flex-end",
+        marginTop: "112px",
+        height: "100vh",
         "@media(max-width:600px)": {
-            marginTop: "50%",
-            marginLeft: "15%",
-            marginRight: "15%",
+            justifyContent: "center",
+            padding: "5%"
         }
     },
+    mainBannerText: {
+        color: "white",
+        fontSize: "4rem",
+        textAlign: "center",
+        fontWeight: "bold",
+        fontFamily: "Nanum Gothic, sans-serif",
+        zIndex: 1,
+        height: "fit-content",
+        backgroundColor: "gray",
+        opacity: "0.85",
+        borderRadius: "35px",
+        padding: "20px",
+        "@media(max-width:600px)": {
+            fontSize: "2rem",
+            textAlign: "center",
+            padding: "10px",
+        }
+    },
+    mainBannerTextWrapper: {
+        display: "flex",
+        margin: "22% auto",
+        flexDirection: "column"
+    },
+    supplierWrapper: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    supplierSubWrapper: {
+        display: "flex",
+        width: "100%",
+        justifyContent: "center"
+    }
 
 }))
 
@@ -544,9 +588,13 @@ const Main = () => {
 
     return (
         <div className={classes.mainRoot}>
-            {/* <div className={classes.mainBanner}>We are closed Tuesday, August 1st. We will reopen Wednesday, August 2nd</div> */}
+            <div className={classes.mainBanner}>
+                <div className={classes.mainBannerTextWrapper}>
+                    <Typography className={classes.mainBannerText}>Local service, quality cabinets.</Typography>
+                </div>
+            </div>
 
-            <img src={CabinetBacksplash} className={classes.landingImage} />
+            {/* <img src={CabinetBacksplash} className={classes.landingImage} /> */}
 
             <section class="sectionWrapper">
                 <div className={classes.container}>
@@ -554,7 +602,7 @@ const Main = () => {
                         <span className={classes.scrollToSectionOne} id="sectionOne"></span>
                     </div>
                     <div className={classes.containerMarginBottomSmall}>
-                        <Typography className={classes.someOfWorkHeader}>Section 1 Header Line 1... <br /> Section 1 Line 2.</Typography>
+                        <Typography className={classes.someOfWorkHeader}>All-wood, custom, and high-quality cabinets.</Typography>
                     </div>
                 </div>
 
@@ -562,14 +610,19 @@ const Main = () => {
             <div className={classes.container}>
                 <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
             </div>
-            <section class="sectionWrapper">
-                <Typography className={classes.someOfWorkHeader}>Section 2 Header Line 1... <br /> Section 2 Line 2.</Typography>
-
-                <Link to="/chill-menu" class="menuContent menuLink chillBlock">
-                    Page 2
-                </Link>
-                <Link to="/grill-menu" class="menuContent menuLink grillBlock">
-                    Page 3
+            <section className={classes.supplierWrapper}>
+                <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography> We use the best in the business</Typography>
+                <div className={classes.supplierSubWrapper}>
+                    <div className={classes.supplierImgWrapper}>
+                        <img className={classes.supplierImage} src={wolfLogo} />
+                        <img className={classes.supplierImage} src={belknapLogo} />
+                        <img className={classes.supplierImage} src={richelieuLogo} />
+                    </div>
+                </div>
+                <Link to="/suppliers">
+                    <Button>
+                        Supplier Gallery
+                    </Button>
                 </Link>
             </section>
             <span className={classes.scrollToLocation} id="sectionThree"></span>
@@ -597,14 +650,6 @@ const Main = () => {
                                     (585) 512-5300
                                 </Button>
                             </a>
-                            {/* <div className={classes.socialLinkWrapper}>
-                                <a href="" target="_blank" className={classes.socialLink}>
-                                    <img className={classes.socialFooter} src={InstagramIcon} />
-                                </a>
-                                <a href="" target="_blank" className={classes.socialLink}>
-                                    <img className={classes.socialFacebookSpacing} src={FacebookIcon} />
-                                </a>
-                            </div> */}
 
                         </div>
                         <div className={classes.reviewsWrapper}>

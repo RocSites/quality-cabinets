@@ -38,7 +38,6 @@ const withStyles = makeStyles(() => ({
     top: 0,
     boxShadow: "1px 0 10px 0 rgb(89 98 115 / 20%)",
     zIndex: "1",
-    opacity: "0.85"
   },
   navBarTitle: {
     maxWidth: 960,
@@ -122,7 +121,8 @@ const withStyles = makeStyles(() => ({
     "@media(max-width: 600px)": {
       fontSize: "0.75rem",
       margin: "auto",
-      width: "110px"
+      width: "100px",
+      padding: "8px"
     }
   },
   drawerLinkWrapper: {

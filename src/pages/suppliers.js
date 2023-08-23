@@ -5,11 +5,11 @@ import SEO from "../components/seo"
 import "../components/main.css"
 
 
-const ChillMenu = () => (
+const Suppliers = () => (
   <Layout>
-    <SEO title="Page 2" />
-    <h1 class="menuHeader">Page 2</h1>
+    <SEO title="Suppliers" />
+    <h1 class="menuHeader">Suppliers</h1>
   </Layout>
 )
 
-export default ChillMenu
+export default Suppliers
