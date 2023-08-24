@@ -160,7 +160,7 @@ const withStyles = makeStyles(() => ({
         marginRight: "0px",
         fontSize: "2em",
         fontWeight: "500",
-        fontFamily: "Nanum Gothic, sans-serif; !important",
+        fontFamily: "Nanum Gothic, sans-serif !important",
         textAlign: "center",
         margin: "auto",
         "@media(max-width: 600px)": {

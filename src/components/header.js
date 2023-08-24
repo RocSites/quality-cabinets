@@ -23,7 +23,7 @@ import "./main.css"
 const withStyles = makeStyles(() => ({
   "@global": {
     "*": {
-      fontFamily: "Nanum Gothic, sans-serif; !important",
+      fontFamily: "Nanum Gothic, sans-serif !important",
       fontWeight: "100"
     }
   },
