@@ -10,18 +10,18 @@ import wolfLogo from "../images/wolf_logo_green.png"
 import belknapLogo from "../images/belknap_logo.jpeg"
 import richelieuLogo from "../images/Richelieu_Logo.svg"
 import CabinetBacksplash from "../images/cab_backsplash.jpeg"
-// import galleryImageOne from "../images/galleryOne.jpg"
-// import galleryImageTwo from "../images/galleryTwo.jpeg"
-// import galleryImageThree from "../images/galleryThree.jpeg"
-// import galleryImageFour from "../images/galleryFour.jpeg"
-// import galleryImageFive from "../images/galleryFive.jpeg"
-// import galleryImageSix from "../images/gallerySix.jpeg"
-// import galleryImageSeven from "../images/gallerySeven.jpeg"
-// import galleryImageEight from "../images/galleryEight.jpeg"
-// import galleryImageNine from "../images/galleryNine.jpg"
-// import galleryImageTen from "../images/galleryTen.jpg"
-// import galleryImageEleven from "../images/galleryEleven.jpg"
-// import galleryImageTwelve from "../images/galleryTwelve.jpeg"
+import galleryImageOne from "../images/galleryOne.jpg"
+import galleryImageTwo from "../images/galleryTwo.jpeg"
+import galleryImageThree from "../images/galleryThree.jpeg"
+import galleryImageFour from "../images/galleryFour.jpeg"
+import galleryImageFive from "../images/galleryFive.jpeg"
+import galleryImageSix from "../images/gallerySix.jpeg"
+import galleryImageSeven from "../images/gallerySeven.jpeg"
+import galleryImageEight from "../images/galleryEight.jpeg"
+import galleryImageNine from "../images/galleryNine.jpg"
+import galleryImageTen from "../images/galleryTen.jpg"
+import galleryImageEleven from "../images/galleryEleven.jpg"
+import galleryImageTwelve from "../images/galleryTwelve.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
 import PhoneIcon from '@material-ui/icons/Phone'
@@ -760,9 +760,9 @@ const Main = () => {
                         </div>
                         <div className={classes.galleryImageWrapper}>
                             {/* <img className={classes.galleryImage} src={galleryImageEight} />
-                            <img className={classes.galleryImage} src={galleryImageSix} />
+                            <img className={classes.galleryImage} src={galleryImageSix} /> */}
                             <img className={classes.galleryImage} src={galleryImageOne} />
-                            <img className={classes.galleryImage} src={galleryImageTwo} />
+                            {/* <img className={classes.galleryImage} src={galleryImageTwo} />
                             <img className={classes.galleryImage} src={galleryImageThree} />
                             <img className={classes.galleryImage} src={galleryImageFive} />
                             <img className={classes.galleryImage} src={galleryImageFour} />
