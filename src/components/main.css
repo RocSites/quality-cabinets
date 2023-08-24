@@ -73,6 +73,12 @@ body {
     text-align: center;
 }
 
+.supplierHeader {
+    margin-top: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .menuImage {
     width: 100%;
 }

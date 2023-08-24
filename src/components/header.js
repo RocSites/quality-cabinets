@@ -30,7 +30,7 @@ const withStyles = makeStyles(() => ({
   navBarRoot: {
     position: "fixed",
     display: "flex",
-    background: "gray",
+    background: "black",
     color: "white",
     justifyContent: "space-between",
     width: "100%",
@@ -101,7 +101,7 @@ const withStyles = makeStyles(() => ({
   },
   navCallButton: {
     display: "flex",
-    backgroundColor: "#000000",
+    backgroundColor: "gray",
     padding: "8px 16px",
     color: "white",
     textTransform: "none",
@@ -111,7 +111,7 @@ const withStyles = makeStyles(() => ({
   },
   navCallButtonMobile: {
     display: "flex",
-    backgroundColor: "#000000",
+    backgroundColor: "gray",
     padding: "8px 16px",
     color: "white",
     textTransform: "none",

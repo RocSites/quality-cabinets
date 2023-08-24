@@ -10,6 +10,18 @@ import wolfLogo from "../images/wolf_logo_green.png"
 import belknapLogo from "../images/belknap_logo.jpeg"
 import richelieuLogo from "../images/Richelieu_Logo.svg"
 import CabinetBacksplash from "../images/cab_backsplash.jpeg"
+import galleryImageOne from "../images/gallery/galleryOne.jpg"
+import galleryImageTwo from "../images/gallery/galleryTwo.jpeg"
+import galleryImageThree from "../images/gallery/galleryThree.jpeg"
+import galleryImageFour from "../images/gallery/galleryFour.jpeg"
+import galleryImageFive from "../images/gallery/galleryFive.jpeg"
+import galleryImageSix from "../images/gallery/gallerySix.jpeg"
+import galleryImageSeven from "../images/gallery/gallerySeven.jpeg"
+import galleryImageEight from "../images/gallery/galleryEight.jpeg"
+import galleryImageNine from "../images/gallery/galleryNine.jpg"
+import galleryImageTen from "../images/gallery/galleryTen.jpg"
+import galleryImageEleven from "../images/gallery/galleryEleven.jpg"
+import galleryImageTwelve from "../images/gallery/galleryTwelve.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
 import PhoneIcon from '@material-ui/icons/Phone'
@@ -17,6 +29,11 @@ import StarRateIcon from '@material-ui/icons/StarRate';
 import FacebookIcon from "../images/facebook_icon4.svg"
 import InstagramIcon from "../images/instagram_icon4.svg"
 import GoogleIcon from "../images/google_icon.png"
+import wolfDrawer from "../images/wolf-drawer.png"
+import wolfDrawerTwo from "../images/wolf_drawer_two.png"
+import wolfWood from "../images/wolf-wood.jpeg"
+import wolfSink from "../images/wolf_sink.png"
+import MailIcon from '@mui/icons-material/Mail';
 import "./main.css"
 
 const withStyles = makeStyles(() => ({
@@ -39,16 +56,6 @@ const withStyles = makeStyles(() => ({
         display: "flex",
         flexDirection: "column",
         background: "#008a9c"
-    },
-    aboutWrapper: {
-        display: "flex",
-        margin: "auto",
-        margin: "20px",
-        color: "black",
-        marginBottom: "50px",
-        "@media(max-width: 600px)": {
-            flexDirection: "column"
-        }
     },
     servicesTitleHeader: {
         textAlign: "center",
@@ -92,6 +99,18 @@ const withStyles = makeStyles(() => ({
         textAlign: "center",
         fontSize: "2rem",
         color: "black",
+        padding: "10px",
+        width: "100%",
+        margin: "auto",
+        fontFamily: "Nanum Gothic, sans-serif",
+        "@media(max-width: 600px)": {
+            width: "90%"
+        }
+    },
+    someOfWorkHeaderDark: {
+        textAlign: "center",
+        fontSize: "2rem",
+        color: "white",
         padding: "10px",
         width: "100%",
         margin: "auto",
@@ -401,10 +420,18 @@ const withStyles = makeStyles(() => ({
     aboutTitleHeader: {
         textAlign: "center",
         fontSize: "2rem",
-        color: "black",
-        textTransform: "uppercase",
+        color: "white",
+        textTransform: "none",
         marginBottom: 0,
-        fontFamily: "Nanum Gothic, sans-serif !important"
+        fontFamily: "Nanum Gothic, sans-serif !important",
+    },
+    getQuoteTitleHeader: {
+        textAlign: "center",
+        fontSize: "2rem",
+        color: "black",
+        textTransform: "none",
+        marginBottom: 0,
+        fontFamily: "Nanum Gothic, sans-serif !important",
     },
     addressText: {
         textAlign: "center",
@@ -414,7 +441,15 @@ const withStyles = makeStyles(() => ({
     aboutWrapper: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center"
+        justifyContent: "center",
+        color: "white",
+        backgroundColor: "black",
+        padding: "50px"
+    },
+    getQuoteWrapper: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
     },
     scrollToLocation: {
         height: "100px",
@@ -484,6 +519,10 @@ const withStyles = makeStyles(() => ({
         flexDirection: "column",
         margin: "20px 0"
     },
+    aboutContainer: {
+        display: "flex",
+        flexDirection: "column",
+    },
     containerMarginBottomSmall: {
         display: "flex",
         flexDirection: "column",
@@ -531,7 +570,7 @@ const withStyles = makeStyles(() => ({
     mainBannerTextWrapper: {
         display: "flex",
         margin: "22% auto",
-        flexDirection: "column"
+        flexDirection: "column",
     },
     supplierWrapper: {
         display: "flex",
@@ -557,7 +596,34 @@ const withStyles = makeStyles(() => ({
         },
         "& > span": {
             textTransform: "none"
+        },
+        "@media(max-width:600px)": {
+            width: "250px"
         }
+    },
+    galleryImageWrapper: {
+        display: "grid",
+        color: "white",
+        justifyContent: "center",
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+        gridGap: "1em",
+        width: "100%",
+        "@media(max-width:600px)": {
+            padding: "20px"
+        }
+    },
+    galleryImage: {
+        width: "100%",
+        height: "300px",
+        aspectRatio: "1/1",
+        objectFit: "cover"
+    },
+    sectionDarkWrapper: {
+        backgroundColor: "black",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        minHeight: "500px"
     }
 
 }))
@@ -605,30 +671,55 @@ const Main = () => {
         <div className={classes.mainRoot}>
             <div className={classes.mainBanner}>
                 <div className={classes.mainBannerTextWrapper}>
-                    <Typography className={classes.mainBannerText}>Local service, quality cabinets.</Typography>
+                    <Typography className={classes.mainBannerText}>Local service, quality cabinets, <i>every time</i>.</Typography>
                 </div>
             </div>
 
             {/* <img src={CabinetBacksplash} className={classes.landingImage} /> */}
 
-            <section class="sectionWrapper">
+            <section className={classes.sectionDarkWrapper}>
                 <div className={classes.container}>
                     <div className={classes.containerMarginBottomSmall}>
-                        <Typography className={classes.someOfWorkHeader}>All-wood, custom, and high-quality cabinets.</Typography>
+                        <Typography className={classes.someOfWorkHeaderDark}>All-wood, custom, and high-quality cabinets.</Typography>
+                        <div className={classes.galleryImageWrapper}>
+                            <img className={classes.galleryImage} src={wolfSink} />
+                            <img className={classes.galleryImage} src={wolfDrawer} />
+                            <img className={classes.galleryImage} src={wolfWood} />
+                            <img className={classes.galleryImage} src={wolfDrawerTwo} />
+                        </div>
                     </div>
                 </div>
             </section>
-            
+
             <div className={classes.container}>
                 <span className={classes.scrollToSectionOne} id="sectionOne"></span>
             </div>
             <section class="py-5 section-bubble3">
                 <div className={classes.container}>
 
-                    <div className={classes.aboutWrapper}>
+                    <div className={classes.getQuoteWrapper}>
                         <div className={classes.aboutSectionWrapper}>
-                            <Typography className={classes.aboutTitleHeader}>Get a Quote</Typography>
-                            <Typography className={classes.addressText}>Section 3 subtext</Typography>
+                            <Typography className={classes.getQuoteTitleHeader}>Get a Quote</Typography>
+                            <Typography className={classes.addressText}>Questions? We'd love to help make your dream project become a reality.</Typography>
+
+                            <div>
+                                <div className={classes.phoneEmailWrapper}>
+                                    <a href="mailto:woodtechny@gmail.com">
+                                        <Button className={classes.contactButton}>
+                                            <MailIcon className={classes.phoneIcon} />
+                                            Email Us
+                                        </Button>
+                                    </a>
+                                    <a href="tel:(585) 512-5300" className={classes.contactPhone}>
+                                        <Button className={classes.contactButton}>
+                                            <PhoneIcon className={classes.phoneIcon} />
+                                            (585) 512-5300
+                                        </Button>
+                                    </a>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -661,50 +752,29 @@ const Main = () => {
             <span className={classes.scrollToLocation} id="sectionThree"></span>
 
             <section class="py-5 section-bubble3">
-                <div className={classes.container}>
+                <div className={classes.aboutContainer}>
                     <div className={classes.aboutWrapper}>
                         <div className={classes.aboutSectionWrapper}>
                             <Typography className={classes.aboutTitleHeader}>About Us</Typography>
-                            <Typography className={classes.addressText}>Section 3 subtext</Typography>
+                            <Typography className={classes.addressText}>We pride ourselves not only on providing custom, all-wood, cabinets at a fair price, but top quality work. Every project receives the skills and commitment that only a trained craftsman can bring to the table. It is our mission to do it well, to do it once, and to deliver a quality product to our customers, every time. You can trust that our team will work tirelessly to satisfy your needs no matter how big or small the job may be.</Typography>
+                        </div>
+                        <div className={classes.galleryImageWrapper}>
+                            <img className={classes.galleryImage} src={galleryImageEight} />
+                            <img className={classes.galleryImage} src={galleryImageSix} />
+                            <img className={classes.galleryImage} src={galleryImageOne} />
+                            <img className={classes.galleryImage} src={galleryImageTwo} />
+                            <img className={classes.galleryImage} src={galleryImageThree} />
+                            <img className={classes.galleryImage} src={galleryImageFive} />
+                            <img className={classes.galleryImage} src={galleryImageFour} />
+                            <img className={classes.galleryImage} src={galleryImageSeven} />
+                            <img className={classes.galleryImage} src={galleryImageNine} />
+                            <img className={classes.galleryImage} src={galleryImageTen} />
+                            <img className={classes.galleryImage} src={galleryImageEleven} />
+                            <img className={classes.galleryImage} src={galleryImageTwelve} />
                         </div>
                     </div>
                 </div>
             </section>
-
-            <span className={classes.scrollToContact} id="contactForm"></span>
-            <section class="py-5 section-bubble4">
-                <div className={classes.container}>
-                    <div>
-                        <Typography className={classes.connectHeader}>Connect With Us</Typography>
-                        <div className={classes.phoneEmailWrapper}>
-                            <a href="tel:(585) 512-5300" className={classes.contactPhone}>
-                                <Button className={classes.contactButton}>
-                                    <PhoneIcon className={classes.phoneIcon} />
-                                    (585) 512-5300
-                                </Button>
-                            </a>
-
-                        </div>
-                        <div className={classes.reviewsWrapper}>
-                            <a className={classes.reviewLink}
-                                href=""
-                                target="_blank"
-                            >
-                                <Button
-                                    className={classes.reviewButton}
-                                >
-                                    <div className={classes.reviewStarWrapper}>
-                                        <Typography className={classes.reviewHeader}>Leave us a review!</Typography>
-                                        <img className={classes.socialFooterMargin} src={GoogleIcon} />
-                                        <FiveStar />
-                                    </div>
-                                </Button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </div>
     )
 }
