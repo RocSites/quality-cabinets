@@ -87,6 +87,7 @@ const withStyles = makeStyles(() => ({
         padding: "10px",
         width: "100%",
         margin: "auto",
+        paddingTop: "60px",
         fontFamily: "Nanum Gothic, sans-serif",
         "@media(max-width: 600px)": {
             width: "90%"
@@ -441,7 +442,9 @@ const withStyles = makeStyles(() => ({
     },
     scrollToLocation: {
         height: "100px",
-        flexDirection: "column"
+        flexDirection: "column",
+        backgroundColor: "#f3f0f0",
+
     },
     connectHeader: {
         fontSize: "2rem",
@@ -567,7 +570,9 @@ const withStyles = makeStyles(() => ({
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "#f3f0f0",
+
     },
     supplierSubWrapper: {
         display: "flex",
@@ -608,7 +613,8 @@ const withStyles = makeStyles(() => ({
         width: "100%",
         height: "300px",
         aspectRatio: "1/1",
-        objectFit: "cover"
+        objectFit: "cover",
+        borderRadius: "10px"
     },
     sectionDarkWrapper: {
         backgroundColor: "black",
@@ -693,7 +699,6 @@ const Main = () => {
                         <div className={classes.aboutSectionWrapper}>
                             <Typography className={classes.getQuoteTitleHeader}>Get a Quote</Typography>
                             <Typography className={classes.addressText}>Questions? We'd love to help make your dream project become a reality.</Typography>
-
                             <div>
                                 <div className={classes.phoneEmailWrapper}>
                                     <a className={classes.emailLink} href="mailto:woodtechny@gmail.com">
@@ -708,10 +713,10 @@ const Main = () => {
                                             (585) 512-5300
                                         </Button>
                                     </a>
-
                                 </div>
                             </div>
-
+                            <Typography><b>Want it delivered?</b></Typography>
+                            <Typography>Delivery is available for an additional charge.</Typography>
                         </div>
                     </div>
                 </div>

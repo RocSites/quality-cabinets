@@ -37,7 +37,7 @@ const withStyles = makeStyles(() => ({
     height: "112px",
     top: 0,
     boxShadow: "1px 0 10px 0 rgb(89 98 115 / 20%)",
-    zIndex: "1",
+    zIndex: "2",
   },
   navBarTitle: {
     maxWidth: 960,
