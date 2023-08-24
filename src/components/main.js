@@ -2,6 +2,7 @@ import React from 'react'
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
@@ -10,18 +11,6 @@ import wolfLogo from "../images/wolf_logo_green.png"
 import belknapLogo from "../images/belknap_logo.jpeg"
 import richelieuLogo from "../images/Richelieu_Logo.svg"
 import CabinetBacksplash from "../images/cab_backsplash.jpeg"
-import galleryImageOne from "../images/gallery_image_one.jpg"
-import galleryImageTwo from "../images/gallery_image_two.jpeg"
-import galleryImageThree from "../images/gallery_image_three.jpeg"
-import galleryImageFour from "../images/gallery_image_four.jpeg"
-import galleryImageFive from "../images/gallery_image_five.jpeg"
-import galleryImageSix from "../images/gallery_image_six.jpeg"
-import galleryImageSeven from "../images/gallery_image_seven.jpeg"
-import galleryImageEight from "../images/gallery_image_eight.jpeg"
-import galleryImageNine from "../images/gallery_image_nine.jpg"
-import galleryImageTen from "../images/gallery_image_ten.jpg"
-import galleryImageEleven from "../images/gallery_image_eleven.jpg"
-import galleryImageTwelve from "../images/gallery_image_twelve.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
 import PhoneIcon from '@material-ui/icons/Phone'
@@ -766,18 +755,18 @@ const Main = () => {
                             <Typography className={classes.addressText}>We pride ourselves not only on providing custom, all-wood, cabinets at a fair price, but top quality work. Every project receives the skills and commitment that only a trained craftsman can bring to the table. It is our mission to do it well, to do it once, and to deliver a quality product to our customers, every time. You can trust that our team will work tirelessly to satisfy your needs no matter how big or small the job may be.</Typography>
                         </div>
                         <div className={classes.galleryImageWrapper}>
-                            <img className={classes.galleryImage} src={galleryImageEight} />
-                            <img className={classes.galleryImage} src={galleryImageSix} />
-                            <img className={classes.galleryImage} src={galleryImageOne} />
-                            <img className={classes.galleryImage} src={galleryImageTwo} />
-                            <img className={classes.galleryImage} src={galleryImageThree} />
-                            <img className={classes.galleryImage} src={galleryImageFive} />
-                            <img className={classes.galleryImage} src={galleryImageFour} />
-                            <img className={classes.galleryImage} src={galleryImageSeven} />
-                            <img className={classes.galleryImage} src={galleryImageNine} />
-                            <img className={classes.galleryImage} src={galleryImageTen} />
-                            <img className={classes.galleryImage} src={galleryImageEleven} />
-                            <img className={classes.galleryImage} src={galleryImageTwelve} />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_eight.jpeg"/>
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_six.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_one.jpg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_two.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_three.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_five.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_four.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_seven.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_nine.jpg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_ten.jpg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_eleven.jpg" />
+                            <StaticImage className={classes.galleryImage} src="../images/gallery_image_twelve.jpeg" />
                         </div>
                     </div>
                 </div>
