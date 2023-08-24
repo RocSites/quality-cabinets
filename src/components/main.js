@@ -18,10 +18,6 @@ import StarRateIcon from '@material-ui/icons/StarRate';
 import FacebookIcon from "../images/facebook_icon4.svg"
 import InstagramIcon from "../images/instagram_icon4.svg"
 import GoogleIcon from "../images/google_icon.png"
-import wolfDrawer from "../images/wolf-drawer.png"
-import wolfDrawerTwo from "../images/wolf_drawer_two.png"
-import wolfWood from "../images/wolf-wood.jpeg"
-import wolfSink from "../images/wolf_sink.png"
 import MailIcon from '@mui/icons-material/Mail';
 import "./main.css"
 
@@ -678,10 +674,10 @@ const Main = () => {
                     <div className={classes.containerMarginBottomSmall}>
                         <Typography className={classes.someOfWorkHeaderDark}>All-wood, custom, and high-quality cabinets.</Typography>
                         <div className={classes.galleryImageWrapper}>
-                            <img className={classes.galleryImage} src={wolfSink} />
-                            <img className={classes.galleryImage} src={wolfDrawer} />
-                            <img className={classes.galleryImage} src={wolfWood} />
-                            <img className={classes.galleryImage} src={wolfDrawerTwo} />
+                            <StaticImage className={classes.galleryImage} src="../images/wolf_sink.png" />
+                            <StaticImage className={classes.galleryImage} src="../images/wolf-drawer.png" />
+                            <StaticImage className={classes.galleryImage} src="../images/wolf-wood.jpeg" />
+                            <StaticImage className={classes.galleryImage} src="../images/wolf_drawer_two.png" />
                         </div>
                     </div>
                 </div>
