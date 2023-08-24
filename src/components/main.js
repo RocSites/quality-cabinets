@@ -10,18 +10,18 @@ import wolfLogo from "../images/wolf_logo_green.png"
 import belknapLogo from "../images/belknap_logo.jpeg"
 import richelieuLogo from "../images/Richelieu_Logo.svg"
 import CabinetBacksplash from "../images/cab_backsplash.jpeg"
-import galleryImageOne from "../images/galleryOne.jpg"
-import galleryImageTwo from "../images/galleryTwo.jpeg"
-import galleryImageThree from "../images/galleryThree.jpeg"
-import galleryImageFour from "../images/galleryFour.jpeg"
-import galleryImageFive from "../images/galleryFive.jpeg"
-import galleryImageSix from "../images/gallerySix.jpeg"
-import galleryImageSeven from "../images/gallerySeven.jpeg"
-import galleryImageEight from "../images/galleryEight.jpeg"
-import galleryImageNine from "../images/galleryNine.jpg"
-import galleryImageTen from "../images/galleryTen.jpg"
-import galleryImageEleven from "../images/galleryEleven.jpg"
-import galleryImageTwelve from "../images/galleryTwelve.jpeg"
+// import galleryImageOne from "../images/galleryOne.jpg"
+// import galleryImageTwo from "../images/galleryTwo.jpeg"
+// import galleryImageThree from "../images/galleryThree.jpeg"
+// import galleryImageFour from "../images/galleryFour.jpeg"
+// import galleryImageFive from "../images/galleryFive.jpeg"
+// import galleryImageSix from "../images/gallerySix.jpeg"
+// import galleryImageSeven from "../images/gallerySeven.jpeg"
+// import galleryImageEight from "../images/galleryEight.jpeg"
+// import galleryImageNine from "../images/galleryNine.jpg"
+// import galleryImageTen from "../images/galleryTen.jpg"
+// import galleryImageEleven from "../images/galleryEleven.jpg"
+// import galleryImageTwelve from "../images/galleryTwelve.jpeg"
 import fiveStar from '../images/fiveStar.png'
 import Divider from '@material-ui/core/Divider'
 import PhoneIcon from '@material-ui/icons/Phone'
@@ -759,7 +759,7 @@ const Main = () => {
                             <Typography className={classes.addressText}>We pride ourselves not only on providing custom, all-wood, cabinets at a fair price, but top quality work. Every project receives the skills and commitment that only a trained craftsman can bring to the table. It is our mission to do it well, to do it once, and to deliver a quality product to our customers, every time. You can trust that our team will work tirelessly to satisfy your needs no matter how big or small the job may be.</Typography>
                         </div>
                         <div className={classes.galleryImageWrapper}>
-                            <img className={classes.galleryImage} src={galleryImageEight} />
+                            {/* <img className={classes.galleryImage} src={galleryImageEight} />
                             <img className={classes.galleryImage} src={galleryImageSix} />
                             <img className={classes.galleryImage} src={galleryImageOne} />
                             <img className={classes.galleryImage} src={galleryImageTwo} />
@@ -770,7 +770,7 @@ const Main = () => {
                             <img className={classes.galleryImage} src={galleryImageNine} />
                             <img className={classes.galleryImage} src={galleryImageTen} />
                             <img className={classes.galleryImage} src={galleryImageEleven} />
-                            <img className={classes.galleryImage} src={galleryImageTwelve} />
+                            <img className={classes.galleryImage} src={galleryImageTwelve} /> */}
                         </div>
                     </div>
                 </div>
