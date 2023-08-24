@@ -171,7 +171,7 @@ const Header = ({ siteTitle }) => {
 
           <Button
             className={classes.navCallButton}
-            target="_blank" href="tel:"
+            target="_blank" href="tel:(585) 512-5300"
           >
             <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
             Call Us
@@ -226,7 +226,7 @@ const Header = ({ siteTitle }) => {
 
               <Button
                 class="drawerItemLogin"
-                target="_blank" href="tel:"
+                target="_blank" href="tel:(585) 512-5300"
               >
                 <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
                 Call Us

@@ -263,6 +263,9 @@ const withStyles = makeStyles(() => ({
             textAlign: "center"
         }
     },
+    emailLink: {
+        textDecoration: "none"
+    },
     contactPhone: {
         color: "black",
         textDecoration: "none",
@@ -551,7 +554,7 @@ const withStyles = makeStyles(() => ({
     },
     mainBannerText: {
         color: "white",
-        fontSize: "4rem",
+        fontSize: "3.5rem",
         textAlign: "center",
         fontWeight: "bold",
         fontFamily: "Nanum Gothic, sans-serif",
@@ -569,8 +572,11 @@ const withStyles = makeStyles(() => ({
     },
     mainBannerTextWrapper: {
         display: "flex",
-        margin: "22% auto",
+        margin: "19% auto",
         flexDirection: "column",
+        "@media(max-width:600px)": {
+            margin: "25% auto"
+        }
     },
     supplierWrapper: {
         display: "flex",
@@ -585,6 +591,7 @@ const withStyles = makeStyles(() => ({
     },
     supplierButton: {
         backgroundColor: "gray",
+        textDecoration: "none",
         color: "white",
         borderRadius: "35px",
         padding: "10px",
@@ -671,7 +678,7 @@ const Main = () => {
         <div className={classes.mainRoot}>
             <div className={classes.mainBanner}>
                 <div className={classes.mainBannerTextWrapper}>
-                    <Typography className={classes.mainBannerText}>Local service, quality cabinets, <i>every time</i>.</Typography>
+                    <Typography className={classes.mainBannerText}>Local service, quality cabinets, <br/> <i>every time</i>.</Typography>
                 </div>
             </div>
 
@@ -704,7 +711,7 @@ const Main = () => {
 
                             <div>
                                 <div className={classes.phoneEmailWrapper}>
-                                    <a href="mailto:woodtechny@gmail.com">
+                                    <a className={classes.emailLink} href="mailto:woodtechny@gmail.com">
                                         <Button className={classes.contactButton}>
                                             <MailIcon className={classes.phoneIcon} />
                                             Email Us
