@@ -701,7 +701,7 @@ const Main = () => {
                 <div className={classes.container}>
                     <div className={classes.containerMarginBottomSmall}>
                         <div className={classes.subHeaderWrapper}>
-                            <Typography className={classes.someOfWorkHeaderDark}>Unbeatable Value: Elevate Your Space Beyond Big Box Offerings</Typography>
+                            <Typography className={classes.someOfWorkHeaderDark}>Unbeatable Value: Elevate Your Space Beyond Big Box Options</Typography>
                             <Typography style={{ color: "white", textAlign: "center" }}>
                                 At Quality Cabinets, we're redefining expectations and saving you money. <br /><br />Why overspend on limited options from big box retailers
                                 when you can elevate your space with our premium all-wood cabinets? <br /><br />Our mission is to provide both an exceptional selection and unmatched savings. Discover the difference in craftsmanship, durability, and style that our wholesale cabinets offer. </Typography>
