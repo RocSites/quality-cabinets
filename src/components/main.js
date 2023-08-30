@@ -689,7 +689,7 @@ const Main = () => {
         <div className={classes.mainRoot}>
             <div className={classes.mainBanner}>
                 <div className={classes.mainBannerTextWrapper}>
-                    <Typography className={classes.mainBannerText}>Premium All-Wood Cabinets at Wholesale Prices. <br />
+                    <Typography className={classes.mainBannerText}>Premium All-Wood Cabinets at Wholesale Prices <br />
                         {/* <i>every time</i> */}
                     </Typography>
                 </div>
@@ -701,10 +701,10 @@ const Main = () => {
                 <div className={classes.container}>
                     <div className={classes.containerMarginBottomSmall}>
                         <div className={classes.subHeaderWrapper}>
-                            <Typography className={classes.someOfWorkHeaderDark}>Unbeatable Value: Elevate Your Space Beyond Big Box Options</Typography>
+                            <Typography className={classes.someOfWorkHeaderDark}>Unbeatable Value: Elevate Your Space Beyond the Big Box Options</Typography>
                             <Typography style={{ color: "white", textAlign: "center" }}>
                                 At Quality Cabinets, we're redefining expectations and saving you money. <br /><br />Why overspend on limited options from big box retailers
-                                when you can elevate your space with our premium all-wood cabinets? <br /><br />Our mission is to provide both an exceptional selection and unmatched savings. Discover the difference in craftsmanship, durability, and style that our wholesale cabinets offer. </Typography>
+                                when you can go with our premium, all-wood cabinets? <br /><br />Our mission is to provide both an exceptional selection and unmatched savings. Discover the difference in craftsmanship, durability, and style. </Typography>
                         </div>
                         <div className={classes.galleryImageWrapper}>
                             <StaticImage className={classes.galleryImage} src="../images/wolf_sink.png" />
@@ -727,12 +727,9 @@ const Main = () => {
                             <Typography className={classes.getQuoteTitleHeader}>Get a Quote</Typography>
                             <Typography className={classes.addressTextQuote}>We can get you cabinets quickly, so you can get your project done!</Typography>
 
-                            <Typography style={{textAlign: "center", color: "red"}}>Most orders are fulfilled in 2 weeks</Typography>
-                            <br/>
-                            <div>
-                                <Typography style={{textAlign: "center"}}><b>Want it delivered?</b></Typography>
-                                <Typography style={{textAlign: "center"}}>Delivery is available for an additional charge.</Typography>
-                            </div>
+                            <Typography style={{ textAlign: "center", color: "red" }}>Most orders are fulfilled in 2 weeks</Typography>
+                            <br />
+
                             <div>
                                 <div className={classes.phoneEmailWrapper}>
                                     <a className={classes.emailLink} href="mailto:woodtechny@gmail.com">
@@ -747,6 +744,10 @@ const Main = () => {
                                             (585) 512-5300
                                         </Button>
                                     </a>
+                                </div>
+                                <div style={{marginTop: "20px"}}>
+                                    <Typography style={{ textAlign: "center" }}><b>Want it delivered?</b></Typography>
+                                    <Typography style={{ textAlign: "center" }}>Delivery is available for an additional charge.</Typography>
                                 </div>
                             </div>
                         </div>
@@ -785,7 +786,7 @@ const Main = () => {
                     <div className={classes.aboutWrapper}>
                         <div className={classes.aboutSectionWrapper}>
                             <Typography className={classes.aboutTitleHeader}>About Us</Typography>
-                            <Typography className={classes.addressText}>We pride ourselves on providing custom, all-wood cabinets, at a fair price. <br/><br/> Every project receives a personal, customized estimate, backed by our team of experts. <br/><br/>It is our mission to deliver a quality product to our customers, every time. <br/><br/> You can trust that our team will work tirelessly to satisfy your needs no matter how big or small the job may be.</Typography>
+                            <Typography className={classes.addressText}>We pride ourselves on providing custom, all-wood cabinets, at a fair price. <br /><br /> Every project receives a personal, customized estimate, backed by our team of experts. <br /><br />It is our mission to deliver a quality product to our customers, every time. <br /><br /> You can trust that our team will work tirelessly to satisfy your needs no matter how big or small the job may be.</Typography>
                         </div>
                         <Typography className={classes.aboutTitleHeader}>Recent Projects</Typography>
 
