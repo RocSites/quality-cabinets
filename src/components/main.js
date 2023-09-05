@@ -98,6 +98,8 @@ const withStyles = makeStyles(() => ({
         fontSize: "2rem",
         color: "white",
         width: "100%",
+        lineHeight: "1.25",
+        marginBottom: "20px",
         fontFamily: "Questrial, sans-serif",
         "@media(max-width: 600px)": {
             width: "100%"
@@ -553,7 +555,7 @@ const withStyles = makeStyles(() => ({
     },
     mainBanner: {
         display: "flex",
-        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),url(${CabinetBacksplash})`,
+        backgroundImage: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(${CabinetBacksplash})`,
         backgroundSize: "cover",
         justifyContent: "flex-end",
         marginTop: "112px",
@@ -568,9 +570,9 @@ const withStyles = makeStyles(() => ({
         fontSize: "3rem",
         textAlign: "left",
         fontFamily: "Questrial, sans-serif",
+        lineHeight: "1",
         zIndex: 1,
         height: "fit-content",
-        backgroundColor: "gray",
         opacity: "0.85",
         borderRadius: "0px",
         padding: "20px",
@@ -601,7 +603,7 @@ const withStyles = makeStyles(() => ({
     supplierSubWrapper: {
         display: "flex",
         width: "100%",
-        justifyContent: "flex-start"
+        justifyContent: "center"
     },
     supplierButton: {
         backgroundColor: "gray",
@@ -734,7 +736,7 @@ const Main = () => {
                             <Typography style={{ textAlign: "left", color: "red", width: "100%", padding: "1rem" }}>Most orders are fulfilled in 2 weeks</Typography>
                             <br />
 
-                            <div style={{width: "100%"}}>
+                            <div style={{ width: "100%" }}>
                                 <div className={classes.phoneEmailWrapper}>
                                     <a className={classes.emailLink} href="mailto:woodtechny@gmail.com">
                                         <Button className={classes.contactButton}>
@@ -749,7 +751,7 @@ const Main = () => {
                                         </Button>
                                     </a>
                                 </div>
-                                <div style={{marginTop: "20px"}}>
+                                <div style={{ marginTop: "20px" }}>
                                     <Typography style={{ textAlign: "left", padding: "1rem" }}><b>Want it delivered?</b></Typography>
                                     <Typography style={{ textAlign: "left", padding: "1rem" }}>Delivery is available for an additional charge.</Typography>
                                 </div>
@@ -763,7 +765,7 @@ const Main = () => {
                 <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
             </div>
             <section className={classes.supplierWrapper}>
-                <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography style={{width: "100%", textAlign: "left"}}> We use the best in the business</Typography>
+                <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography style={{ width: "100%", textAlign: "left" }}> We use the best in the business</Typography>
                 <div className={classes.supplierSubWrapper}>
                     <div className={classes.supplierImgWrapper}>
                         <a href="https://www.wolfhomeproducts.com/" target="_blank">
@@ -777,7 +779,9 @@ const Main = () => {
                         </a>
                     </div>
                 </div>
-                <Link to="/suppliers">
+                <Link style={{
+                    textAlign: "center",
+                }} to="/suppliers">
                     <Button className={classes.supplierButton}>
                         Supplier Gallery
                     </Button>
