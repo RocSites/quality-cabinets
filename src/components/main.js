@@ -630,13 +630,13 @@ const withStyles = makeStyles(() => ({
         gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
         gridGap: "1em",
         width: "100%",
+        margin: "40px 0",
         "@media(max-width:600px)": {
-            padding: "20px"
+            // padding: "1rem"
         }
     },
     galleryImage: {
         width: "100%",
-        height: "300px",
         aspectRatio: "1/1",
         objectFit: "cover",
         borderRadius: "0px"
