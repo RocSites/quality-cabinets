@@ -565,7 +565,7 @@ const withStyles = makeStyles(() => ({
     },
     mainBannerText: {
         color: "white",
-        fontSize: "3.5rem",
+        fontSize: "3rem",
         textAlign: "left",
         fontFamily: "Questrial, sans-serif",
         zIndex: 1,
