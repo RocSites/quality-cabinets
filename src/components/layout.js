@@ -9,7 +9,7 @@ import "./layout.css"
 const withStyles = makeStyles(() => ({
   "@global":{
     p:{
-        fontFamily: "Nanum Gothic, sans-serif"
+        fontFamily: "Questrial, sans-serif"
     }
   },
     layoutRoot: {
@@ -37,7 +37,7 @@ const withStyles = makeStyles(() => ({
     copyrightText: {
       marginTop: "auto",
       marginBottom: "auto",
-      fontFamily: "Nanum Gothic, sans-serif !important",
+      fontFamily: "Questrial, sans-serif !important",
       "@media(max-width: 600px)":{
         textAlign: "left"
       }

@@ -88,7 +88,7 @@ const withStyles = makeStyles(() => ({
         width: "100%",
         margin: "auto",
         paddingTop: "60px",
-        fontFamily: "Nanum Gothic, sans-serif",
+        fontFamily: "Questrial, sans-serif",
         "@media(max-width: 600px)": {
             // width: "90%"
         }
@@ -98,7 +98,7 @@ const withStyles = makeStyles(() => ({
         fontSize: "2rem",
         color: "white",
         width: "100%",
-        fontFamily: "Nanum Gothic, sans-serif",
+        fontFamily: "Questrial, sans-serif",
         "@media(max-width: 600px)": {
             width: "100%"
         }
@@ -154,7 +154,7 @@ const withStyles = makeStyles(() => ({
         marginRight: "0px",
         fontSize: "2em",
         fontWeight: "500",
-        fontFamily: "Nanum Gothic, sans-serif !important",
+        fontFamily: "Questrial, sans-serif !important",
         textAlign: "left",
         margin: "auto",
         "@media(max-width: 600px)": {
@@ -171,7 +171,7 @@ const withStyles = makeStyles(() => ({
             marginRight: "0px",
             fontSize: "2em",
             fontWeight: "100",
-            fontFamily: "Nanum Gothic, sans-serif",
+            fontFamily: "Questrial, sans-serif",
             textAlign: "left",
             margin: "auto"
         }
@@ -263,7 +263,7 @@ const withStyles = makeStyles(() => ({
     contactPhone: {
         color: "black",
         textDecoration: "none",
-        fontFamily: "Nanum Gothic, sans-serif",
+        fontFamily: "Questrial, sans-serif",
     },
     contactButton: {
         margin: "20px",
@@ -421,7 +421,7 @@ const withStyles = makeStyles(() => ({
         color: "white",
         textTransform: "none",
         marginBottom: 0,
-        fontFamily: "Nanum Gothic, sans-serif !important",
+        fontFamily: "Questrial, sans-serif !important",
     },
     getQuoteTitleHeader: {
         textAlign: "left",
@@ -431,20 +431,20 @@ const withStyles = makeStyles(() => ({
         color: "black",
         textTransform: "none",
         marginBottom: 0,
-        fontFamily: "Nanum Gothic, sans-serif !important",
+        fontFamily: "Questrial, sans-serif !important",
     },
     addressText: {
         textAlign: "left",
         width: "100%",
         margin: "40px 0",
-        fontFamily: "Nanum Gothic, sans-serif !important"
+        fontFamily: "Questrial, sans-serif !important"
     },
     addressTextQuote: {
         textAlign: "left",
         color: "white",
         padding: "20px",
         margin: "40px 0",
-        fontFamily: "Nanum Gothic, sans-serif !important",
+        fontFamily: "Questrial, sans-serif !important",
         width: "100%",
         backgroundColor: "gray"
     },
@@ -472,7 +472,7 @@ const withStyles = makeStyles(() => ({
         textAlign: "left",
         color: "black",
         textTransform: "uppercase",
-        fontFamily: "Nanum Gothic, sans-serif !important"
+        fontFamily: "Questrial, sans-serif !important"
     },
     socialLinkWrapper: {
         display: "flex",
@@ -567,8 +567,7 @@ const withStyles = makeStyles(() => ({
         color: "white",
         fontSize: "3.5rem",
         textAlign: "left",
-        fontWeight: "bold",
-        fontFamily: "Nanum Gothic, sans-serif",
+        fontFamily: "Questrial, sans-serif",
         zIndex: 1,
         height: "fit-content",
         backgroundColor: "gray",
