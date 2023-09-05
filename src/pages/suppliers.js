@@ -31,12 +31,12 @@ const withStyles = makeStyles(() => ({
     fontSize: "1.5rem",
     fontWeight: "bold",
     margin: "10px 20px",
-    textAlign: "center"
+    textAlign: "left"
   },
   supplierSubheader: {
     padding: "10px 20px",
     fontWeight: "normal",
-    textAlign: "center"
+    textAlign: "left"
   },
   supplierImage: {
     width: "250px"
@@ -55,7 +55,7 @@ const withStyles = makeStyles(() => ({
   },
   wolfLinkButton: {
     backgroundColor: "#9caf86",
-    borderRadius: "35px",
+    borderRadius: "0px",
     padding: "10px 30px",
     "& > span": {
       textTransform: "none",
@@ -72,7 +72,7 @@ const withStyles = makeStyles(() => ({
   },
   belknapLinkButton: {
     backgroundColor: "#434d7e",
-    borderRadius: "35px",
+    borderRadius: "0px",
     padding: "10px 30px",
     "& > span": {
       textTransform: "none",
@@ -89,7 +89,7 @@ const withStyles = makeStyles(() => ({
   },
   richLinkButton: {
     backgroundColor: "#e11d06",
-    borderRadius: "35px",
+    borderRadius: "0px",
     padding: "10px 30px",
     "& > span": {
       textTransform: "none",

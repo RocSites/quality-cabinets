@@ -39,7 +39,7 @@ const withStyles = makeStyles(() => ({
       marginBottom: "auto",
       fontFamily: "Nanum Gothic, sans-serif !important",
       "@media(max-width: 600px)":{
-        textAlign: "center"
+        textAlign: "left"
       }
     },
     dougDesignText: {
@@ -50,14 +50,14 @@ const withStyles = makeStyles(() => ({
       marginBottom: "auto",
       color: "white",
       "@media(max-width: 600px)":{
-        textAlign: "center"
+        textAlign: "left"
       }
     },
     footerAddress:{
       marginTop: "auto",
       marginBottom: "auto",
       "@media(max-width: 600px)":{
-        textAlign: "center"
+        textAlign: "left"
       }
     },
     list: {

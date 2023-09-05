@@ -6,7 +6,7 @@ import scrollTo from 'gatsby-plugin-smoothscroll'
 import Button from '@material-ui/core/Button'
 import chillGrillLogoOG from '../images/chill_logo_og.jpeg'
 import CabinetLogo from "../images/logo/logo.svg"
-import CabinetLogoText from "../images/logo/logo-assets/vector/default-monochrome.svg"
+import CabinetLogoText from "../images/qc_top_logo_white.png"
 import coneIcon from "../images/cone_icon.png"
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
@@ -68,7 +68,7 @@ const withStyles = makeStyles(() => ({
   },
   navLogo: {
     display: "flex",
-    width: "100%",
+    width: "150px",
     margin: "auto",
   },
   drawerItem: {
@@ -105,7 +105,7 @@ const withStyles = makeStyles(() => ({
     padding: "8px 16px",
     color: "white",
     textTransform: "none",
-    borderRadius: "35px",
+    borderRadius: "0px",
     height: "50px",
     margin: "auto 20px"
   },
@@ -115,7 +115,7 @@ const withStyles = makeStyles(() => ({
     padding: "8px 16px",
     color: "white",
     textTransform: "none",
-    borderRadius: "35px",
+    borderRadius: "0px",
     height: "50px",
     margin: "auto 20px",
     "@media(max-width: 600px)": {

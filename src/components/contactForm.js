@@ -56,7 +56,7 @@ const withStyles = makeStyles((theme) => ({
         backgroundColor: "#001841",
         color: theme.palette.background.paper,
         borderColor: "#001841",
-        borderRadius: "35px",
+        borderRadius: "0px",
         padding:"15px",
         paddingLeft: "25px",
         paddingRight: "25px",

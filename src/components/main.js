@@ -43,7 +43,7 @@ const withStyles = makeStyles(() => ({
         background: "#008a9c"
     },
     servicesTitleHeader: {
-        textAlign: "center",
+        textAlign: "left",
         fontSize: "1.5rem",
         marginBottom: "20px"
     },
@@ -81,23 +81,22 @@ const withStyles = makeStyles(() => ({
         background: "white"
     },
     someOfWorkHeader: {
-        textAlign: "center",
+        textAlign: "left",
         fontSize: "2rem",
         color: "black",
-        padding: "10px",
+        padding: "0",
         width: "100%",
         margin: "auto",
         paddingTop: "60px",
         fontFamily: "Nanum Gothic, sans-serif",
         "@media(max-width: 600px)": {
-            width: "90%"
+            // width: "90%"
         }
     },
     someOfWorkHeaderDark: {
-        textAlign: "center",
+        textAlign: "left",
         fontSize: "2rem",
         color: "white",
-        padding: "10px",
         width: "100%",
         fontFamily: "Nanum Gothic, sans-serif",
         "@media(max-width: 600px)": {
@@ -106,7 +105,7 @@ const withStyles = makeStyles(() => ({
     },
     subHeaderWrapper: {
         display: "flex",
-        padding: "20px",
+        padding: "1rem",
         flexDirection: "column",
         width: "55%",
         "@media(max-width: 1000px)": {
@@ -145,7 +144,7 @@ const withStyles = makeStyles(() => ({
         marginRight: "0px",
         fontSize: "3.0em",
         fontWeight: "500",
-        textAlign: "center",
+        textAlign: "left",
         margin: "auto"
     },
     landingPageSubHeader: {
@@ -156,7 +155,7 @@ const withStyles = makeStyles(() => ({
         fontSize: "2em",
         fontWeight: "500",
         fontFamily: "Nanum Gothic, sans-serif !important",
-        textAlign: "center",
+        textAlign: "left",
         margin: "auto",
         "@media(max-width: 600px)": {
             display: "none"
@@ -173,7 +172,7 @@ const withStyles = makeStyles(() => ({
             fontSize: "2em",
             fontWeight: "100",
             fontFamily: "Nanum Gothic, sans-serif",
-            textAlign: "center",
+            textAlign: "left",
             margin: "auto"
         }
     },
@@ -229,7 +228,7 @@ const withStyles = makeStyles(() => ({
     },
     servicesCardContent: {
         position: "relative",
-        textAlign: "center",
+        textAlign: "left",
         color: "black",
         padding: 0,
         paddingBottom: "0 !important",
@@ -252,10 +251,10 @@ const withStyles = makeStyles(() => ({
     },
     phoneEmailWrapper: {
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         "@media(max-width: 600px)": {
             flexDirection: "column",
-            textAlign: "center"
+            textAlign: "left"
         }
     },
     emailLink: {
@@ -271,7 +270,7 @@ const withStyles = makeStyles(() => ({
         backgroundColor: "#333333",
         color: "white",
         borderColor: "#333333",
-        borderRadius: "35px",
+        borderRadius: "0px",
         padding: "15px",
         paddingLeft: "25px",
         paddingRight: "25px",
@@ -293,7 +292,7 @@ const withStyles = makeStyles(() => ({
         display: "flex",
         flexDirection: "column",
         margin: "auto",
-        textAlign: "center",
+        textAlign: "left",
         alignItems: "center",
     },
     reviewClickText: {
@@ -416,15 +415,18 @@ const withStyles = makeStyles(() => ({
         fontSize: "1.75rem"
     },
     aboutTitleHeader: {
-        textAlign: "center",
+        textAlign: "left",
         fontSize: "2rem",
+        width: "100%",
         color: "white",
         textTransform: "none",
         marginBottom: 0,
         fontFamily: "Nanum Gothic, sans-serif !important",
     },
     getQuoteTitleHeader: {
-        textAlign: "center",
+        textAlign: "left",
+        padding: "1rem",
+        width: "100%",
         fontSize: "2rem",
         color: "black",
         textTransform: "none",
@@ -432,12 +434,13 @@ const withStyles = makeStyles(() => ({
         fontFamily: "Nanum Gothic, sans-serif !important",
     },
     addressText: {
-        textAlign: "center",
+        textAlign: "left",
+        width: "100%",
         margin: "40px 0",
         fontFamily: "Nanum Gothic, sans-serif !important"
     },
     addressTextQuote: {
-        textAlign: "center",
+        textAlign: "left",
         color: "white",
         padding: "20px",
         margin: "40px 0",
@@ -451,7 +454,7 @@ const withStyles = makeStyles(() => ({
         justifyContent: "center",
         color: "white",
         backgroundColor: "black",
-        padding: "50px"
+        padding: "1rem"
     },
     getQuoteWrapper: {
         display: "flex",
@@ -466,7 +469,7 @@ const withStyles = makeStyles(() => ({
     },
     connectHeader: {
         fontSize: "2rem",
-        textAlign: "center",
+        textAlign: "left",
         color: "black",
         textTransform: "uppercase",
         fontFamily: "Nanum Gothic, sans-serif !important"
@@ -479,7 +482,7 @@ const withStyles = makeStyles(() => ({
     aboutSectionWrapper: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
         "& iframe": {
             "@media(max-width:600px)": {
@@ -518,7 +521,7 @@ const withStyles = makeStyles(() => ({
     },
     reviewButton: {
         backgroundColor: "#333333",
-        borderRadius: "25px",
+        borderRadius: "0px",
         padding: "20px",
         marginBottom: "20px",
         border: "none"
@@ -563,18 +566,18 @@ const withStyles = makeStyles(() => ({
     mainBannerText: {
         color: "white",
         fontSize: "3.5rem",
-        textAlign: "center",
+        textAlign: "left",
         fontWeight: "bold",
         fontFamily: "Nanum Gothic, sans-serif",
         zIndex: 1,
         height: "fit-content",
         backgroundColor: "gray",
         opacity: "0.85",
-        borderRadius: "35px",
+        borderRadius: "0px",
         padding: "20px",
         "@media(max-width:600px)": {
             fontSize: "2rem",
-            textAlign: "center",
+            textAlign: "left",
             padding: "10px",
         }
     },
@@ -589,21 +592,23 @@ const withStyles = makeStyles(() => ({
     supplierWrapper: {
         display: "flex",
         flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
+        justifyContent: "flex-start",
+        width: "100%",
+        alignItems: "left",
+        padding: "1rem",
         backgroundColor: "#f3f0f0",
 
     },
     supplierSubWrapper: {
         display: "flex",
         width: "100%",
-        justifyContent: "center"
+        justifyContent: "flex-start"
     },
     supplierButton: {
         backgroundColor: "gray",
         textDecoration: "none",
         color: "white",
-        borderRadius: "35px",
+        borderRadius: "0px",
         padding: "10px",
         width: "350px",
         '&:hover': {
@@ -634,12 +639,12 @@ const withStyles = makeStyles(() => ({
         height: "300px",
         aspectRatio: "1/1",
         objectFit: "cover",
-        borderRadius: "10px"
+        borderRadius: "0px"
     },
     sectionDarkWrapper: {
         backgroundColor: "black",
         display: "flex",
-        justifyContent: "center",
+        justifyContent: "flex-start",
         alignItems: "center",
         minHeight: "500px"
     }
@@ -702,7 +707,7 @@ const Main = () => {
                     <div className={classes.containerMarginBottomSmall}>
                         <div className={classes.subHeaderWrapper}>
                             <Typography className={classes.someOfWorkHeaderDark}>Unbeatable Value: Elevate Your Space Beyond the Big Box Options</Typography>
-                            <Typography style={{ color: "white", textAlign: "center" }}>
+                            <Typography style={{ color: "white", textAlign: "left" }}>
                                 At Quality Cabinets, we're redefining expectations and saving you money. <br /><br />Why overspend on limited options from big box retailers
                                 when you can go with our premium, all-wood cabinets? <br /><br />Our mission is to provide both an exceptional selection and unmatched savings. Discover the difference in craftsmanship, durability, and style. </Typography>
                         </div>
@@ -727,10 +732,10 @@ const Main = () => {
                             <Typography className={classes.getQuoteTitleHeader}>Get a Quote</Typography>
                             <Typography className={classes.addressTextQuote}>We can get you cabinets quickly, so you can get your project done!</Typography>
 
-                            <Typography style={{ textAlign: "center", color: "red" }}>Most orders are fulfilled in 2 weeks</Typography>
+                            <Typography style={{ textAlign: "left", color: "red", width: "100%", padding: "1rem" }}>Most orders are fulfilled in 2 weeks</Typography>
                             <br />
 
-                            <div>
+                            <div style={{width: "100%"}}>
                                 <div className={classes.phoneEmailWrapper}>
                                     <a className={classes.emailLink} href="mailto:woodtechny@gmail.com">
                                         <Button className={classes.contactButton}>
@@ -746,8 +751,8 @@ const Main = () => {
                                     </a>
                                 </div>
                                 <div style={{marginTop: "20px"}}>
-                                    <Typography style={{ textAlign: "center" }}><b>Want it delivered?</b></Typography>
-                                    <Typography style={{ textAlign: "center" }}>Delivery is available for an additional charge.</Typography>
+                                    <Typography style={{ textAlign: "left", padding: "1rem" }}><b>Want it delivered?</b></Typography>
+                                    <Typography style={{ textAlign: "left", padding: "1rem" }}>Delivery is available for an additional charge.</Typography>
                                 </div>
                             </div>
                         </div>
@@ -759,7 +764,7 @@ const Main = () => {
                 <span className={classes.scrollToSectionOne} id="sectionTwo"></span>
             </div>
             <section className={classes.supplierWrapper}>
-                <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography> We use the best in the business</Typography>
+                <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography style={{width: "100%", textAlign: "left"}}> We use the best in the business</Typography>
                 <div className={classes.supplierSubWrapper}>
                     <div className={classes.supplierImgWrapper}>
                         <a href="https://www.wolfhomeproducts.com/" target="_blank">
