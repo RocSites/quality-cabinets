@@ -713,10 +713,11 @@ const Main = () => {
                                 when you can go with our premium, all-wood cabinets? <br /><br />Our mission is to provide both an exceptional selection and unmatched savings. Discover the difference in craftsmanship, durability, and style. </Typography>
                         </div>
                         <div className={classes.galleryImageWrapper}>
-                            <StaticImage className={classes.galleryImage} src="../images/wolf_sink.png" />
-                            <StaticImage className={classes.galleryImage} src="../images/wolf-drawer.png" />
+                            <StaticImage className={classes.galleryImage} src="../images/cab_white_bath.png" />
+                            <StaticImage className={classes.galleryImage} src="../images/cab_white_laundry.png" />
+                            <StaticImage className={classes.galleryImage} src="../images/cab_green_kitchen.png" />
+                            <StaticImage className={classes.galleryImage} src="../images/cab_blue_bathroom.jpeg" />
                             <StaticImage className={classes.galleryImage} src="../images/wolf-wood.jpeg" />
-                            <StaticImage className={classes.galleryImage} src="../images/wolf_drawer_two.png" />
                         </div>
                     </div>
                 </div>
