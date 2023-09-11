@@ -36,7 +36,7 @@ const withStyles = makeStyles(() => ({
   supplierSubheader: {
     padding: "10px 20px",
     fontWeight: "normal",
-    textAlign: "left"
+    textAlign: "center"
   },
   supplierImage: {
     width: "250px"
@@ -119,69 +119,72 @@ const Suppliers = () => {
   const classes = withStyles()
 
   return (
-    <Layout>
+    <Layout showSupplier={false}>
       <SEO title="Suppliers" />
       <h1 class="supplierHeader">Suppliers</h1>
       <Typography className={classes.supplierSubheader}>We partner with the best in the industry. Our suppliers share the same commitment to quality, design and  affordability.</Typography>
       <div className={classes.supplierRoot}>
         <div className={classes.supplierContentWrapper}>
           <Typography className={classes.supplierTitle}>Wolf Home Products</Typography>
-          <a href="https://www.wolfhomeproducts.com/" target="_blank">
+          <a>
             <img className={classes.supplierImage} src={wolfLogo} />
           </a>
           <Typography>Create a kitchen that you’re happy to come home to with customized  Wolf cabinetry.  Explore the following options:</Typography>
-          <div className={classes.wolfButtonWrapper}>
-            <a className={classes.wolfLink} href="https://www.wolfhomeproducts.com/wolfclassic" target="_blank">
+          <br/>
+          {/* <div className={classes.wolfButtonWrapper}>
+            <a className={classes.wolfLink}>
               <Button className={classes.wolfLinkButton}>Wolf Classic</Button>
             </a>
-            <a className={classes.wolfLink} href="https://www.wolfhomeproducts.com/wolfsignature" target="_blank">
+            <a className={classes.wolfLink}>
               <Button className={classes.wolfLinkButton}>Wolf Signature</Button>
             </a>
-            <a className={classes.wolfLink} href="https://www.wolfhomeproducts.com/wolfdesigner" target="_blank">
+            <a className={classes.wolfLink} >
               <Button className={classes.wolfLinkButton}>Wolf Designer</Button>
             </a>
-          </div>
+          </div> */}
           <img className={classes.supplierImageTwo} src={wolfCabOne} />
         </div>
         <div className={classes.supplierContentWrapper}>
           <Typography className={classes.supplierTitle}>The Belknap White Group</Typography>
-          <a href="https://www.belknapwhite.com/" target="_blank">
+          <a>
             <img className={classes.supplierImage} src={belknapLogo} />
           </a>
           <Typography>Belknap White supplies our tile and flooring materials. </Typography>
-          <div className={classes.wolfButtonWrapper}>
-            <a className={classes.wolfLink} href="https://www.bellacerafloors.com/" target="_blank">
+          <br/>
+          {/* <div className={classes.wolfButtonWrapper}>
+            <a className={classes.wolfLink} >
               <Button className={classes.belknapLinkButton}>Bella Cera Hardwood</Button>
             </a>
-            <a className={classes.wolfLink} href="https://www.marazziusa.com/" target="_blank">
+            <a className={classes.wolfLink} >
               <Button className={classes.belknapLinkButton}>Marazzi</Button>
             </a>
-            <a className={classes.wolfLink} href="https://www.americanolean.com/" target="_blank">
+            <a className={classes.wolfLink} >
               <Button className={classes.belknapLinkButton}>American Olean</Button>
             </a>
-            <a className={classes.wolfLink} href="https://drive.google.com/file/d/10tbecPcyaW2BC76mFO31zZxE7e1g2P6x/view" target="_blank">
+            <a className={classes.wolfLink} >
               <Button className={classes.belknapLinkButton}>Lugarno</Button>
             </a>
-          </div>
+          </div> */}
           <img className={classes.supplierImageTwo} src={bwOne} />
         </div>
         <div className={classes.supplierContentWrapper}>
           <Typography className={classes.supplierTitle}>Richelieu Hardware</Typography>
-          <a href="https://www.richelieu.com/us/en/" target="_blank">
+          <a>
             <img className={classes.supplierImage} src={richelieuLogo} />
           </a>
           <Typography>It's the finishing touches that often have the most impact.  Checkout  the wide variety of style choices from Richelieu:</Typography>
-          <div className={classes.wolfButtonWrapper}>
-            <a className={classes.wolfLink} href="https://www.richelieu.com/us/en/category/decorative-hardware/cabinet-hardware-pulls-and-knobs/pulls/1048046?sort=&nbPerPage=48" target="_blank">
+          <br/>
+          {/* <div className={classes.wolfButtonWrapper}>
+            <a className={classes.wolfLink} >
               <Button className={classes.richLinkButton}>Pulls</Button>
             </a>
-            <a className={classes.wolfLink} href="https://www.richelieu.com/us/en/category/decorative-hardware/cabinet-hardware-pulls-and-knobs/knobs/1048047?sort=&nbPerPage=48" target="_blank">
+            <a className={classes.wolfLink} >
               <Button className={classes.richLinkButton}>Knobs</Button>
             </a>
-            <a className={classes.wolfLink} href="https://www.richelieu.com/us/en/category/kitchen-and-bathroom-accessories/kitchen/drawer-organization/1052080?sort=&nbPerPage=48" target="_blank">
+            <a className={classes.wolfLink}>
               <Button className={classes.richLinkButton}>Organizers</Button>
             </a>
-          </div>
+          </div> */}
           <img className={classes.supplierImageTwo} src={richOne} />
         </div>
 

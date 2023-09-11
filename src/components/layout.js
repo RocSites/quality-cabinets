@@ -5,6 +5,7 @@ import {makeStyles} from "@material-ui/core/styles"
 import Header from "./header"
 import Typography from '@material-ui/core/Typography'
 import "./layout.css"
+import { useState, useEffect } from "react"
 
 const withStyles = makeStyles(() => ({
   "@global":{
@@ -65,9 +66,18 @@ const withStyles = makeStyles(() => ({
     }
 })) 
 
-const Layout = ({ children }) => {
+const Layout = (props) => {
   const classes = withStyles();
+  console.log("layout props", props.showSupplier)
 
+  const [showSupplier, setShowSupplier] = useState(true);
+
+  useEffect(() => {
+    setShowSupplier(props.showSupplier)
+  }, [])
+
+  console.log(showSupplier)
+  
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -80,9 +90,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header showSupplier={showSupplier} siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className={classes.layoutRoot}>
-        <main className={classes.mainContent}>{children}</main>
+        <main className={classes.mainContent}>{props.children}</main>
         <footer class="footerRoot">
           <div className={classes.footerContent}>
             <p className={classes.copyrightText}> © {new Date().getFullYear()} Quality Cabinets</p>

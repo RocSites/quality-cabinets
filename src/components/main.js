@@ -769,15 +769,15 @@ const Main = () => {
                 <Typography className={classes.someOfWorkHeader}>Our Suppliers </Typography> <br /> <Typography style={{ width: "100%", textAlign: "left" }}> We use the best in the business</Typography>
                 <div className={classes.supplierSubWrapper}>
                     <div className={classes.supplierImgWrapper}>
-                        <a href="https://www.wolfhomeproducts.com/" target="_blank">
+                        {/* <a href="https://www.wolfhomeproducts.com/" target="_blank"> */}
                             <img className={classes.supplierImage} src={wolfLogo} />
-                        </a>
-                        <a href="https://www.belknapwhite.com/" target="_blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.belknapwhite.com/" target="_blank"> */}
                             <img className={classes.supplierImage} src={belknapLogo} />
-                        </a>
-                        <a href="https://www.richelieu.com/us/en/" target="_blank">
+                        {/* </a> */}
+                        {/* <a href="https://www.richelieu.com/us/en/" target="_blank"> */}
                             <img className={classes.supplierImage} src={richelieuLogo} />
-                        </a>
+                        {/* </a> */}
                     </div>
                 </div>
                 <Link style={{

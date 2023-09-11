@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { makeStyles } from '@material-ui/core'
@@ -130,23 +130,27 @@ const withStyles = makeStyles(() => ({
     flexDirection: "column",
   },
   navButtonMobile: {
-  color: "black",
-  // fontWeight: "bold",
-  textTransform: "none",
-  margin: "10px 16px",
-  textDecoration: "none"
-}
+    color: "black",
+    // fontWeight: "bold",
+    textTransform: "none",
+    margin: "10px 16px",
+    textDecoration: "none"
+  }
 }))
 
 
-const Header = ({ siteTitle }) => {
-
+const Header = (props) => {
+  const siteTitle = props.siteTitle;
   const classes = withStyles();
-  const [openDrawer, setOpenDrawer] = useState(false)
+  const [openDrawer, setOpenDrawer] = useState(false);
+
+  console.log("props", props)
 
   const toggleDrawer = () => {
     setOpenDrawer(drawerOpen => !drawerOpen)
   }
+
+
 
   return (
     <header
@@ -162,9 +166,12 @@ const Header = ({ siteTitle }) => {
           <AnchorLink className={classes.navButton}
             to="/#sectionOne" title="Get a Quote">
           </AnchorLink>
-          <AnchorLink className={classes.navButton}
-            to="/#sectionTwo" title="Suppliers">
-          </AnchorLink>
+          {props.showSupplier === true ?
+            <AnchorLink className={classes.navButton}
+              to="/#sectionTwo" title="Suppliers">
+            </AnchorLink>
+            : null}
+
           <AnchorLink className={classes.navButton}
             to="/#sectionThree" title="About">
           </AnchorLink>
@@ -173,7 +180,7 @@ const Header = ({ siteTitle }) => {
             className={classes.navCallButton}
             target="_blank" href="tel:(585) 512-5300"
           >
-            <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
+            <PhoneIcon sx={{ color: "white" }} class="drawerPhoneIcon" />
             Call Us
           </Button>
         </div>
@@ -192,7 +199,7 @@ const Header = ({ siteTitle }) => {
           className={classes.navCallButtonMobile}
           target="_blank" href="tel:(585) 512-5300"
         >
-          <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
+          <PhoneIcon sx={{ color: "white" }} class="drawerPhoneIcon" />
           Call Us
         </Button>
         <MenuIcon
@@ -216,9 +223,11 @@ const Header = ({ siteTitle }) => {
                 <AnchorLink className={classes.navButtonMobile}
                   to="/#sectionOne" title="Get a Quote">
                 </AnchorLink>
-                <AnchorLink className={classes.navButtonMobile}
-                  to="/#sectionTwo" title="Suppliers">
-                </AnchorLink>
+                {props.showSupplier === true ?
+                  <AnchorLink className={classes.navButtonMobile}
+                    to="/#sectionTwo" title="Suppliers">
+                  </AnchorLink>
+                  : null}
                 <AnchorLink className={classes.navButtonMobile}
                   to="/#sectionThree" title="About">
                 </AnchorLink>
@@ -228,7 +237,7 @@ const Header = ({ siteTitle }) => {
                 class="drawerItemLogin"
                 target="_blank" href="tel:(585) 512-5300"
               >
-                <PhoneIcon sx={{color: "white"}} class="drawerPhoneIcon" />
+                <PhoneIcon sx={{ color: "white" }} class="drawerPhoneIcon" />
                 Call Us
               </Button>
               {/* <div class="socialLinkWrapperNavMobile">
