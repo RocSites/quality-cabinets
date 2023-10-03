@@ -1,70 +1,71 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import {makeStyles} from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles"
 import Header from "./header"
+import { StaticImage } from "gatsby-plugin-image"
 import Typography from '@material-ui/core/Typography'
 import "./layout.css"
 import { useState, useEffect } from "react"
 
 const withStyles = makeStyles(() => ({
-  "@global":{
-    p:{
-        fontFamily: "Questrial, sans-serif"
+  "@global": {
+    p: {
+      fontFamily: "Questrial, sans-serif"
     }
   },
-    layoutRoot: {
-      display: "flex",
-      flexDirection: "column"
-    },
-    mainContent: {
-      flexGrow: 1,
-      minHeight: "100vh"
-    },
-    footerRoot:{
-      background: "#0074eb",
-      color: "black",
-      display: "flex",
-      minHeight: "50px"
-    },
-    footerContent: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100%",
-      flexDirection: "column"
+  layoutRoot: {
+    display: "flex",
+    flexDirection: "column"
+  },
+  mainContent: {
+    flexGrow: 1,
+    minHeight: "100vh"
+  },
+  footerRoot: {
+    background: "#0074eb",
+    color: "black",
+    display: "flex",
+    minHeight: "50px"
+  },
+  footerContent: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+    flexDirection: "column"
 
-    },
-    copyrightText: {
-      marginTop: "auto",
-      marginBottom: "auto",
-      fontFamily: "Questrial, sans-serif !important",
-      "@media(max-width: 600px)":{
-        textAlign: "left"
-      }
-    },
-    dougDesignText: {
-      fontSize: "0.7rem"
-    },
-    footerPhone:{
-      marginTop: "auto",
-      marginBottom: "auto",
-      color: "white",
-      "@media(max-width: 600px)":{
-        textAlign: "left"
-      }
-    },
-    footerAddress:{
-      marginTop: "auto",
-      marginBottom: "auto",
-      "@media(max-width: 600px)":{
-        textAlign: "left"
-      }
-    },
-    list: {
-      width: "200px"
+  },
+  copyrightText: {
+    marginTop: "10px",
+    marginBottom: "10px",
+    fontFamily: "Questrial, sans-serif !important",
+    "@media(max-width: 600px)": {
+      textAlign: "left"
     }
-})) 
+  },
+  dougDesignText: {
+    fontSize: "0.7rem"
+  },
+  footerPhone: {
+    marginTop: "auto",
+    marginBottom: "auto",
+    color: "white",
+    "@media(max-width: 600px)": {
+      textAlign: "left"
+    }
+  },
+  footerAddress: {
+    marginTop: "auto",
+    marginBottom: "auto",
+    "@media(max-width: 600px)": {
+      textAlign: "left"
+    }
+  },
+  list: {
+    width: "200px"
+  }
+}))
 
 const Layout = (props) => {
   const classes = withStyles();
@@ -77,7 +78,7 @@ const Layout = (props) => {
   }, [])
 
   console.log(showSupplier)
-  
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -94,8 +95,13 @@ const Layout = (props) => {
       <div className={classes.layoutRoot}>
         <main className={classes.mainContent}>{props.children}</main>
         <footer class="footerRoot">
+
           <div className={classes.footerContent}>
             <p className={classes.copyrightText}> © {new Date().getFullYear()} Quality Cabinets</p>
+            <p style={{marginBottom: "5px"}}>For all your install and home remodeling needs click below:</p>
+            <a href="https://www.woodtechnyllc.com/" target="_blank">
+              <StaticImage style={{ width: "80px", padding: "10px 0" }} src="../images/WOODTECH logo-01.jpg" />
+            </a>
             <p class="rocsitesText">Website created and maintained by <span><a href="https://www.rocsites.com/" target="_blank">RocSites</a></span></p>
           </div>
         </footer>
