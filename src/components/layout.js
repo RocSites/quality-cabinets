@@ -98,10 +98,7 @@ const Layout = (props) => {
 
           <div className={classes.footerContent}>
             <p className={classes.copyrightText}> © {new Date().getFullYear()} Quality Cabinets</p>
-            <p style={{margin: "10px"}}>For all your install and home remodeling needs click below:</p>
-            <a href="https://www.woodtechnyllc.com/" target="_blank">
-              <StaticImage style={{ width: "80px", padding: "10px 0" }} src="../images/WOODTECH logo-01.jpg" />
-            </a>
+   
             <p class="rocsitesText">Website created and maintained by <span><a href="https://www.rocsites.com/" target="_blank">RocSites</a></span></p>
           </div>
         </footer>

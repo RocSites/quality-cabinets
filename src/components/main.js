@@ -770,13 +770,13 @@ const Main = () => {
                 <div className={classes.supplierSubWrapper}>
                     <div className={classes.supplierImgWrapper}>
                         {/* <a href="https://www.wolfhomeproducts.com/" target="_blank"> */}
-                            <img className={classes.supplierImage} src={wolfLogo} />
+                        <img className={classes.supplierImage} src={wolfLogo} />
                         {/* </a> */}
                         {/* <a href="https://www.belknapwhite.com/" target="_blank"> */}
-                            <img className={classes.supplierImage} src={belknapLogo} />
+                        <img className={classes.supplierImage} src={belknapLogo} />
                         {/* </a> */}
                         {/* <a href="https://www.richelieu.com/us/en/" target="_blank"> */}
-                            <img className={classes.supplierImage} src={richelieuLogo} />
+                        <img className={classes.supplierImage} src={richelieuLogo} />
                         {/* </a> */}
                     </div>
                 </div>
@@ -787,6 +787,13 @@ const Main = () => {
                         Supplier Gallery
                     </Button>
                 </Link>
+                <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "15px"}}>
+                    <p style={{ margin: "10px" }}>For all your install and home remodeling needs click below:</p>
+                    <a href="https://www.woodtechnyllc.com/" target="_blank">
+                        <StaticImage style={{ width: "150px", padding: "10px 0" }} src="../images/WOODTECH logo-01.jpg" />
+                    </a>
+                </div>
+
             </section>
             <span className={classes.scrollToLocation} id="sectionThree"></span>
 
