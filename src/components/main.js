@@ -788,7 +788,7 @@ const Main = () => {
                     </Button>
                 </Link>
                 <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", margin: "15px"}}>
-                    <p style={{ margin: "30px", fontSize: "2rem" }}>For all your install and home remodeling needs click below:</p>
+                    <p style={{ margin: "30px", fontSize: "2rem", lineHeight: "1.25" }}>For all your install and home remodeling needs click below:</p>
                     <a href="https://www.woodtechnyllc.com/" target="_blank">
                         <StaticImage style={{ width: "150px", padding: "10px 0", height: "150px" }} src="../images/WOODTECH logo-01.jpg" />
                     </a>
